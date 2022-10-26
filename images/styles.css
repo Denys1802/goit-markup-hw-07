@@ -79,7 +79,7 @@ font-family: 'Roboto', sans-serif; */
   align-items: center;
 }
 
-.header__logo {
+.logo__header {
   margin-right: 93px;
 }
 
@@ -725,7 +725,7 @@ font-family: 'Roboto', sans-serif; */
   margin-right: 70px;
 }
 
-.footer__logo {
+.logo__footer {
   display: block;
   margin-bottom: 20px;
 
