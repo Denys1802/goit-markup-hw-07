@@ -95,8 +95,10 @@
 		list-style: none;
 	}
 
-	&__item:not(:last-child) {
-		margin-bottom: 9px;
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 9px;
+		}
 	}
 
 	&__link {
@@ -141,14 +143,14 @@
 		list-style: none;
 	}
 
-	&__item:not(:last-child) {
-		margin-right: 10px;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
 	}
 
 	&__icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@extend %centeredFlex;
 
 		width: 44px;
 		height: 44px;
@@ -161,6 +163,4 @@
 			background-color: var(--accent-color);
 		}
 	}
-}
-.text {
 }

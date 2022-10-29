@@ -37,11 +37,7 @@
 }
 
 .works-card {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
-
-	list-style: none;
+	@extend %flexGap;
 	&__item {
 		max-width: 370px;
 		border: 1px solid var(--header-border);
@@ -98,10 +94,7 @@
 	}
 }
 
-.works-card__item:hover .works-card__link::before {
-	transform: translateY(0);
-}
-
+.works-card__item:hover .works-card__link::before,
 .works-card__item:hover .works-card__modal {
 	transform: translateY(0);
 }

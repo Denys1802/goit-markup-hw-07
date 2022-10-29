@@ -1,15 +1,8 @@
 .advantages {
 	padding-bottom: 0;
-	&__title {
-	}
-
+	
 	&__list {
-		display: flex;
-		flex-wrap: wrap;
-
-		gap: 30px;
-
-		list-style: none;
+		@extend %flexGap;
 	}
 
 	&__item {

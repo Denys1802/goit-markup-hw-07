@@ -4,19 +4,12 @@
 	}
 
 	&__list {
-		display: flex;
-		flex-wrap: wrap;
+		@extend %flexGap;
 		justify-content: space-between;
-
-		gap: 30px;
-
-		list-style: none;
 	}
 
 	&__link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@extend %centeredFlex;
 
 		width: 170px;
 		height: 92px;
@@ -32,10 +25,4 @@
 			border: 1px solid var(--accent-color);
 		}
 	}
-}
-.section {
-}
-.container {
-}
-.title {
 }
