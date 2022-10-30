@@ -47,10 +47,6 @@
 
 		display: inline-block;
 		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-		& svg {
-			fill: var(--accent-color);
-		}
 	}
 
 	&__input,
@@ -108,9 +104,9 @@
 	}
 }
 
-// .form-modal__input:focus + .form-modal__icon svg {
-// 	fill: var(--accent-color);
-// }
+.form-modal__input:focus + .form-modal__icon svg {
+	fill: var(--accent-color);
+}
 
 .form-checked {
 	display: flex;
